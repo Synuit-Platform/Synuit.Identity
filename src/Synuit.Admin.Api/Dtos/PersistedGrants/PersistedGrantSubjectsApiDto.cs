@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Synuit.Admin.Api.Dtos.PersistedGrants
+namespace Synuit.Idp.Admin.Api.Dtos.PersistedGrants
 {
     public class PersistedGrantSubjectsApiDto
     {

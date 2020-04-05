@@ -1,6 +1,6 @@
-using Synuit.STS.Identity.Configuration.Interfaces;
+using Synuit.Idp.Configuration.Interfaces;
 
-namespace Synuit.STS.Identity.Configuration
+namespace Synuit.Idp.Configuration
 {
     public class RootConfiguration : IRootConfiguration
     {      

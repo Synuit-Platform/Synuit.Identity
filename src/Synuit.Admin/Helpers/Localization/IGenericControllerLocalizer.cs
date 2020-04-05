@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.Localization;
 
-namespace Synuit.Admin.Helpers.Localization
+namespace Synuit.Idp.Admin.Helpers.Localization
 {
     public interface IGenericControllerLocalizer<out T>
     {

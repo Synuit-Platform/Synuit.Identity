@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Synuit.STS.Identity.Helpers;
-using Synuit.STS.Identity.ViewModels.Diagnostics;
+using Synuit.Idp.Helpers;
+using Synuit.Idp.ViewModels.Diagnostics;
 
-namespace Synuit.STS.Identity.Controllers
+namespace Synuit.Idp.Controllers
 {
     [SecurityHeaders]
     [Authorize]

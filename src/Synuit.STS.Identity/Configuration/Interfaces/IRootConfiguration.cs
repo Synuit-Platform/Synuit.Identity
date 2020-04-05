@@ -1,4 +1,4 @@
-namespace Synuit.STS.Identity.Configuration.Interfaces
+namespace Synuit.Idp.Configuration.Interfaces
 {
     public interface IRootConfiguration
     {

@@ -1,6 +1,6 @@
-using Synuit.Admin.Api.ExceptionHandling;
+using Synuit.Idp.Admin.Api.ExceptionHandling;
 
-namespace Synuit.Admin.Api.Resources
+namespace Synuit.Idp.Admin.Api.Resources
 {
     public interface IApiErrorResources
     {

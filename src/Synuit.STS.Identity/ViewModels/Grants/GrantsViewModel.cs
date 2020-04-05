@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Synuit.STS.Identity.ViewModels.Grants
+namespace Synuit.Idp.ViewModels.Grants
 {
     public class GrantsViewModel
     {

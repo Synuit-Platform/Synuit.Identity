@@ -5,14 +5,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
-using Synuit.STS.Identity.Configuration;
-using Synuit.STS.Identity.Configuration.Constants;
-using Synuit.STS.Identity.Configuration.Interfaces;
-using Synuit.STS.Identity.Helpers;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Configuration;
+using Synuit.Idp.Configuration.Constants;
+using Synuit.Idp.Configuration.Interfaces;
+using Synuit.Idp.Helpers;
 
-namespace Synuit.STS.Identity
+namespace Synuit.Idp
 {
     public class Startup
     {

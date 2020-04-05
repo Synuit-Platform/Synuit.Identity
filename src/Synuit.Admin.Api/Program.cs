@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
-namespace Synuit.Admin.Api
+namespace Synuit.Idp.Admin.Api
 {
     public class Program
     {

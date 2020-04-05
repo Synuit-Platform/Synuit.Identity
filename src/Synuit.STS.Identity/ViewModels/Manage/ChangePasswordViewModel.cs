@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Synuit.STS.Identity.ViewModels.Manage
+namespace Synuit.Idp.ViewModels.Manage
 {
     public class ChangePasswordViewModel
     {

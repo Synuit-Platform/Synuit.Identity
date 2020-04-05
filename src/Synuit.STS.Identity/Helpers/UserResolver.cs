@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
-using Synuit.STS.Identity.Configuration;
+using Synuit.Idp.Configuration;
 using System.Threading.Tasks;
 
-namespace Synuit.STS.Identity.Helpers
+namespace Synuit.Idp.Helpers
 {
     public class UserResolver<TUser> where TUser : class
     {

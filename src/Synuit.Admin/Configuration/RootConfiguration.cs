@@ -1,6 +1,6 @@
-using Synuit.Admin.Configuration.Interfaces;
+using Synuit.Idp.Admin.Configuration.Interfaces;
 
-namespace Synuit.Admin.Configuration
+namespace Synuit.Idp.Admin.Configuration
 {
     public class RootConfiguration : IRootConfiguration
     {

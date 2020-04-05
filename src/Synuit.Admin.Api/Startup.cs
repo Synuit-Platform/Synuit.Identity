@@ -9,17 +9,17 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Skoruba.AuditLogging.EntityFramework.Entities;
-using Synuit.Admin.Api.Configuration;
-using Synuit.Admin.Api.Configuration.Authorization;
-using Synuit.Admin.Api.ExceptionHandling;
-using Synuit.Admin.Api.Helpers;
-using Synuit.Admin.Api.Mappers;
-using Synuit.Admin.Api.Resources;
+using Synuit.Idp.Admin.Api.Configuration;
+using Synuit.Idp.Admin.Api.Configuration.Authorization;
+using Synuit.Idp.Admin.Api.ExceptionHandling;
+using Synuit.Idp.Admin.Api.Helpers;
+using Synuit.Idp.Admin.Api.Mappers;
+using Synuit.Idp.Admin.Api.Resources;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
 
-namespace Synuit.Admin.Api
+namespace Synuit.Idp.Admin.Api
 {
     public class Startup
     {

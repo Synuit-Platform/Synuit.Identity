@@ -1,4 +1,4 @@
-namespace Synuit.STS.Identity.ViewModels.Manage
+namespace Synuit.Idp.ViewModels.Manage
 {
     public class TwoFactorAuthenticationViewModel
     {

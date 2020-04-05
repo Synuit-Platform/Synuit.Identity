@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Logging;
 
-namespace Synuit.STS.Identity.Services
+namespace Synuit.Idp.Services
 {
     public class EmailSender : IEmailSender
     {

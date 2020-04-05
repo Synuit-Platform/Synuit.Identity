@@ -1,4 +1,4 @@
-namespace Synuit.Admin.EntityFramework.Shared.Configuration
+namespace Synuit.Idp.Admin.EntityFramework.Shared.Configuration
 {
     public enum DatabaseProviderType
     {

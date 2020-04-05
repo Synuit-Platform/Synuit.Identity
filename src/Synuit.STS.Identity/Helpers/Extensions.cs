@@ -7,7 +7,7 @@
 using System.Threading.Tasks;
 using IdentityServer4.Stores;
 
-namespace Synuit.STS.Identity.Helpers
+namespace Synuit.Idp.Helpers
 {
     public static class Extensions
     {

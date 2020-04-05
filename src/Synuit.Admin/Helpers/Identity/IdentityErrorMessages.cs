@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Localization;
 
-namespace Synuit.Admin.Helpers.Identity
+namespace Synuit.Idp.Admin.Helpers.Identity
 {
     /// <inheritdoc />
     /// <summary>

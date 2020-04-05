@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace Synuit.Admin.EntityFramework.Shared.Entities.Identity
+namespace Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity
 {
     public class UserIdentityUserToken : IdentityUserToken<string>
     {

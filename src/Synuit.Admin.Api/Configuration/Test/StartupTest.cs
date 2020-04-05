@@ -5,12 +5,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Synuit.Admin.Api.Helpers;
-using Synuit.Admin.Api.Middlewares;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Admin.Api.Helpers;
+using Synuit.Idp.Admin.Api.Middlewares;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
 
-namespace Synuit.Admin.Api.Configuration.Test
+namespace Synuit.Idp.Admin.Api.Configuration.Test
 {
     public class StartupTest : Startup
     {

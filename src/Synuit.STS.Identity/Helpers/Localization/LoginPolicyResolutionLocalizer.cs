@@ -1,6 +1,6 @@
-using Synuit.STS.Identity.Configuration;
+using Synuit.Idp.Configuration;
 
-namespace Synuit.STS.Identity.Helpers.Localization
+namespace Synuit.Idp.Helpers.Localization
 {
     public static class LoginPolicyResolutionLocalizer
     {

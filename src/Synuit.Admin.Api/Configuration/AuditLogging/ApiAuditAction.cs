@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Skoruba.AuditLogging.Events;
 
-namespace Synuit.Admin.Api.AuditLogging
+namespace Synuit.Idp.Admin.Api.AuditLogging
 {
     public class ApiAuditAction : IAuditAction
     {

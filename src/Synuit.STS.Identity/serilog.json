@@ -15,7 +15,7 @@
         {
           "Name": "File",
           "Args": {
-            "path": "Log\\synuit.admin.txt",
+            "path": "logs\\synuit.admin.txt",
             "rollingInterval": "Day"
           }
         }

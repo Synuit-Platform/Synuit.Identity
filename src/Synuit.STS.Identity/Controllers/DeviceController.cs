@@ -16,12 +16,12 @@ using IdentityServer4.Stores;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Synuit.STS.Identity.Configuration;
-using Synuit.STS.Identity.Helpers;
-using Synuit.STS.Identity.ViewModels.Consent;
-using Synuit.STS.Identity.ViewModels.Device;
+using Synuit.Idp.Configuration;
+using Synuit.Idp.Helpers;
+using Synuit.Idp.ViewModels.Consent;
+using Synuit.Idp.ViewModels.Device;
 
-namespace Synuit.STS.Identity.Controllers
+namespace Synuit.Idp.Controllers
 {
     [Authorize]
     [SecurityHeaders]

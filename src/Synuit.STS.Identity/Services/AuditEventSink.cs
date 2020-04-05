@@ -3,7 +3,7 @@ using IdentityServer4.Events;
 using IdentityServer4.Services;
 using Microsoft.Extensions.Logging;
 
-namespace Synuit.STS.Identity.Services
+namespace Synuit.Idp.Services
 {
     public class AuditEventSink : DefaultEventSink
     {

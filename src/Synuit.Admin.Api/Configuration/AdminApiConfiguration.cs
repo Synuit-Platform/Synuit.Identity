@@ -1,4 +1,4 @@
-namespace Synuit.Admin.Api.Configuration
+namespace Synuit.Idp.Admin.Api.Configuration
 {
     public class AdminApiConfiguration
     {

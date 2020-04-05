@@ -1,4 +1,4 @@
-namespace Synuit.Admin.Api.Configuration.Constants
+namespace Synuit.Idp.Admin.Api.Configuration.Constants
 {
     public class ConfigurationConsts
     {

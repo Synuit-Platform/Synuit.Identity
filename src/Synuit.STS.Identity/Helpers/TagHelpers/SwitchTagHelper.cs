@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace Synuit.STS.Identity.Helpers.TagHelpers
+namespace Synuit.Idp.Helpers.TagHelpers
 {
     [HtmlTargetElement("toggle-button")]
     public class SwitchTagHelper : TagHelper

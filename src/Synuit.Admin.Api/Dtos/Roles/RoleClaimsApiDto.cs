@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Synuit.Admin.Api.Dtos.Roles
+namespace Synuit.Idp.Admin.Api.Dtos.Roles
 {
     public class RoleClaimsApiDto<TRoleDtoKey>
     {

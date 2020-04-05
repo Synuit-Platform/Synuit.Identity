@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Synuit.Admin.Api.Dtos.IdentityResources
+namespace Synuit.Idp.Admin.Api.Dtos.IdentityResources
 {
     public class IdentityResourcePropertiesApiDto
     {

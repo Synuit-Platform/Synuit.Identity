@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace Synuit.Admin.Api.Configuration.ApplicationParts
+namespace Synuit.Idp.Admin.Api.Configuration.ApplicationParts
 {
     public class GenericControllerRouteConvention : IControllerModelConvention
     {

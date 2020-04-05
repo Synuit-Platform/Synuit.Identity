@@ -1,4 +1,4 @@
-namespace Synuit.Admin.EntityFramework.Shared.Constants
+namespace Synuit.Idp.Admin.EntityFramework.Shared.Constants
 {
     public static class TableConsts
     {

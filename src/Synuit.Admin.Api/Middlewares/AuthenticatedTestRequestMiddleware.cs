@@ -6,7 +6,7 @@ using IdentityModel;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Http;
 
-namespace Synuit.Admin.Api.Middlewares
+namespace Synuit.Idp.Admin.Api.Middlewares
 {
     public class AuthenticatedTestRequestMiddleware
     {

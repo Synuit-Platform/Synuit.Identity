@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
 
-namespace Synuit.Admin.EntityFramework.MySql.Migrations.IdentityServerConfiguration
+namespace Synuit.Idp.Admin.EntityFramework.MySql.Migrations.IdentityServerConfiguration
 {
     [DbContext(typeof(IdentityServerConfigurationDbContext))]
     [Migration("20191120085701_DbInit")]

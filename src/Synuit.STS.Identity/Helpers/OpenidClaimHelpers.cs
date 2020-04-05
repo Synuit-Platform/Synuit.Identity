@@ -1,13 +1,13 @@
 using IdentityModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Synuit.STS.Identity.Configuration.Constants;
+using Synuit.Idp.Configuration.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 
-namespace Synuit.STS.Identity.Helpers
+namespace Synuit.Idp.Helpers
 {
     public static class OpenIdClaimHelpers
     {

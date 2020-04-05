@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
 
-namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
+namespace Synuit.Idp.Admin.EntityFramework.MySql.Migrations.Identity
 {
     [DbContext(typeof(AdminIdentityDbContext))]
     [Migration("20191120085611_DbInit")]
@@ -19,7 +19,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                 .HasAnnotation("ProductVersion", "3.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
@@ -83,7 +83,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
@@ -109,7 +109,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("Roles");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -132,7 +132,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("RoleClaims");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -155,7 +155,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("UserClaims");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin", b =>
                 {
                     b.Property<string>("LoginProvider")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
@@ -177,7 +177,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("UserLogins");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole", b =>
                 {
                     b.Property<string>("UserId")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
@@ -192,7 +192,7 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("UserRoles");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken", b =>
                 {
                     b.Property<string>("UserId")
                         .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
@@ -211,51 +211,51 @@ namespace Synuit.Admin.EntityFramework.MySql.Migrations.Identity
                     b.ToTable("UserTokens");
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRoleClaim", b =>
                 {
-                    b.HasOne("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole", null)
+                    b.HasOne("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserClaim", b =>
                 {
-                    b.HasOne("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
+                    b.HasOne("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserLogin", b =>
                 {
-                    b.HasOne("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
+                    b.HasOne("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserRole", b =>
                 {
-                    b.HasOne("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole", null)
+                    b.HasOne("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
+                    b.HasOne("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken", b =>
+            modelBuilder.Entity("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentityUserToken", b =>
                 {
-                    b.HasOne("Synuit.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
+                    b.HasOne("Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

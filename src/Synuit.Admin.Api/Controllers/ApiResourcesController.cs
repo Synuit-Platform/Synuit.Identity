@@ -2,15 +2,15 @@ using System.Threading.Tasks;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Synuit.Admin.Api.Configuration.Constants;
-using Synuit.Admin.Api.Dtos.ApiResources;
-using Synuit.Admin.Api.ExceptionHandling;
-using Synuit.Admin.Api.Mappers;
-using Synuit.Admin.Api.Resources;
+using Synuit.Idp.Admin.Api.Configuration.Constants;
+using Synuit.Idp.Admin.Api.Dtos.ApiResources;
+using Synuit.Idp.Admin.Api.ExceptionHandling;
+using Synuit.Idp.Admin.Api.Mappers;
+using Synuit.Idp.Admin.Api.Resources;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Dtos.Configuration;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Services.Interfaces;
 
-namespace Synuit.Admin.Api.Controllers
+namespace Synuit.Idp.Admin.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

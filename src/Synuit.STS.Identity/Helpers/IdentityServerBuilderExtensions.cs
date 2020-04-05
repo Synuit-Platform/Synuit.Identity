@@ -5,9 +5,9 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Synuit.STS.Identity.Configuration;
+using Synuit.Idp.Configuration;
 
-namespace Synuit.STS.Identity.Helpers
+namespace Synuit.Idp.Helpers
 {
     public static class IdentityServerBuilderExtensions
     {

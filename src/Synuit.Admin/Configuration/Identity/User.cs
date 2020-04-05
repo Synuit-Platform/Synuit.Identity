@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Synuit.Admin.Configuration.Identity
+namespace Synuit.Idp.Admin.Configuration.Identity
 {
     public class User
     {

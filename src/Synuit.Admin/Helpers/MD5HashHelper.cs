@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Synuit.Admin.Helpers
+namespace Synuit.Idp.Admin.Helpers
 {
     /// <summary>
     /// Helper-class to create Md5hashes from strings

@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace Synuit.Admin.Api.Mappers
+namespace Synuit.Idp.Admin.Api.Mappers
 {
     public static class ApiResourceApiMappers
     {

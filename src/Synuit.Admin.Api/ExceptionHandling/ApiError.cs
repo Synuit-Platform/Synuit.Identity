@@ -1,4 +1,4 @@
-namespace Synuit.Admin.Api.ExceptionHandling
+namespace Synuit.Idp.Admin.Api.ExceptionHandling
 {
     public class ApiError
     {

@@ -2,9 +2,9 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Skoruba.AuditLogging.Constants;
 using Skoruba.AuditLogging.Events;
-using Synuit.Admin.Api.Configuration;
+using Synuit.Idp.Admin.Api.Configuration;
 
-namespace Synuit.Admin.Api.AuditLogging
+namespace Synuit.Idp.Admin.Api.AuditLogging
 {
     public class ApiAuditSubject : IAuditSubject
     {

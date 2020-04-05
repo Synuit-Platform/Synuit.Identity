@@ -3,9 +3,9 @@ using System.Net.Mail;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Logging;
-using Synuit.STS.Identity.Configuration;
+using Synuit.Idp.Configuration;
 
-namespace Synuit.STS.Identity.Services
+namespace Synuit.Idp.Services
 {
     public class SmtpEmailSender : IEmailSender
     {

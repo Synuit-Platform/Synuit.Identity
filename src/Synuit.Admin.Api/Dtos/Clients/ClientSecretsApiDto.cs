@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Synuit.Admin.Api.Dtos.Clients
+namespace Synuit.Idp.Admin.Api.Dtos.Clients
 {
     public class ClientSecretsApiDto
     {

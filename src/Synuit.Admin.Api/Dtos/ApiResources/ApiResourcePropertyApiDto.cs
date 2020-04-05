@@ -1,4 +1,4 @@
-namespace Synuit.Admin.Api.Dtos.ApiResources
+namespace Synuit.Idp.Admin.Api.Dtos.ApiResources
 {
     public class ApiResourcePropertyApiDto
     {

@@ -10,10 +10,10 @@ using IdentityServer4.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
-using Synuit.STS.Identity.Helpers;
-using Synuit.STS.Identity.ViewModels.Home;
+using Synuit.Idp.Helpers;
+using Synuit.Idp.ViewModels.Home;
 
-namespace Synuit.STS.Identity.Controllers
+namespace Synuit.Idp.Controllers
 {
     [SecurityHeaders]
     public class HomeController : Controller

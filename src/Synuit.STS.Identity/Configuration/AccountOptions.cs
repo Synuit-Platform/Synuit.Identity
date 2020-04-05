@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Synuit.STS.Identity.Configuration
+namespace Synuit.Idp.Configuration
 {
     public class AccountOptions
     {

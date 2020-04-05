@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Synuit.STS.Identity.Helpers;
-using Synuit.STS.Identity.Helpers.Localization;
-using Synuit.STS.Identity.ViewModels.Manage;
+using Synuit.Idp.Helpers;
+using Synuit.Idp.Helpers.Localization;
+using Synuit.Idp.ViewModels.Manage;
 
-namespace Synuit.STS.Identity.Controllers
+namespace Synuit.Idp.Controllers
 {    
     [Authorize]
     public class ManageController<TUser, TKey> : Controller
@@ -697,7 +697,7 @@ namespace Synuit.STS.Identity.Controllers
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("Synuit.STS.Identity"),
+                _urlEncoder.Encode("Synuit.Idp"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

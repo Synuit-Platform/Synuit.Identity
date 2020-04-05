@@ -1,4 +1,4 @@
-namespace Synuit.STS.Identity.Configuration.Constants
+namespace Synuit.Idp.Configuration.Constants
 {
     public static class AddressClaimConstants
     {

@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace Synuit.STS.Identity.ViewModels.Consent
+namespace Synuit.Idp.ViewModels.Consent
 {
     public class ConsentViewModel : ConsentInputModel
     {

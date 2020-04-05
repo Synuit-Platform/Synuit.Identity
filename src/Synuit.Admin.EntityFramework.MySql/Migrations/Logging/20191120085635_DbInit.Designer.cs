@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
 
-namespace Synuit.Admin.EntityFramework.MySql.Migrations.Logging
+namespace Synuit.Idp.Admin.EntityFramework.MySql.Migrations.Logging
 {
     [DbContext(typeof(AdminLogDbContext))]
     [Migration("20191120085635_DbInit")]

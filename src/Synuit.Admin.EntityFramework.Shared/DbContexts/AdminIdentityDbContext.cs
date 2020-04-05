@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Synuit.Admin.EntityFramework.Shared.Constants;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Admin.EntityFramework.Shared.Constants;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
 
-namespace Synuit.Admin.EntityFramework.Shared.DbContexts
+namespace Synuit.Idp.Admin.EntityFramework.Shared.DbContexts
 {
     public class AdminIdentityDbContext : IdentityDbContext<UserIdentity, UserIdentityRole, string, UserIdentityUserClaim, UserIdentityUserRole, UserIdentityUserLogin, UserIdentityRoleClaim, UserIdentityUserToken>
     {

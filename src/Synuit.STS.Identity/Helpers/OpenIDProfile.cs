@@ -1,4 +1,4 @@
-namespace Synuit.STS.Identity.Helpers
+namespace Synuit.Idp.Helpers
 {
     public class OpenIdProfile
     {

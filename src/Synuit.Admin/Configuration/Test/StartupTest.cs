@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
-using Synuit.Admin.Helpers;
-using Synuit.Admin.Middlewares;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Admin.Helpers;
+using Synuit.Idp.Admin.Middlewares;
 
-namespace Synuit.Admin.Configuration.Test
+namespace Synuit.Idp.Admin.Configuration.Test
 {
     public class StartupTest : Startup
     {

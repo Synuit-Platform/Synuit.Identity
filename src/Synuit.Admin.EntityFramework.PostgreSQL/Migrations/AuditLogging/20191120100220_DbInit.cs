@@ -2,7 +2,7 @@ using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Synuit.Admin.EntityFramework.PostgreSQL.Migrations.AuditLogging
+namespace Synuit.Idp.Admin.EntityFramework.PostgreSQL.Migrations.AuditLogging
 {
     public partial class DbInit : Migration
     {

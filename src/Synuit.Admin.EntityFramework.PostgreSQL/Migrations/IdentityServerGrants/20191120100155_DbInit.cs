@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Synuit.Admin.EntityFramework.PostgreSQL.Migrations.IdentityServerGrants
+namespace Synuit.Idp.Admin.EntityFramework.PostgreSQL.Migrations.IdentityServerGrants
 {
     public partial class DbInit : Migration
     {

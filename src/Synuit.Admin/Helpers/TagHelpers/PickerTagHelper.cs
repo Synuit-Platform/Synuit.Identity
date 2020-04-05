@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Newtonsoft.Json;
 
-namespace Synuit.Admin.Helpers.TagHelpers
+namespace Synuit.Idp.Admin.Helpers.TagHelpers
 {
     [HtmlTargetElement("picker")]
     public class PickerTagHelper : TagHelper

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Synuit.Admin.Api.Dtos.Users
+namespace Synuit.Idp.Admin.Api.Dtos.Users
 {
     public class UserChangePasswordApiDto<TUserDtoKey>
     {

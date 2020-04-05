@@ -1,4 +1,4 @@
-namespace Synuit.Admin.Api.Helpers
+namespace Synuit.Idp.Admin.Api.Helpers
 {
     public static class UrlHelpers
     {

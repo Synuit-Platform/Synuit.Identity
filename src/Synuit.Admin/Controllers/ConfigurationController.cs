@@ -6,10 +6,10 @@ using Microsoft.Extensions.Logging;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Dtos.Configuration;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Helpers;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Services.Interfaces;
-using Synuit.Admin.Configuration.Constants;
-using Synuit.Admin.ExceptionHandling;
+using Synuit.Idp.Admin.Configuration.Constants;
+using Synuit.Idp.Admin.ExceptionHandling;
 
-namespace Synuit.Admin.Controllers
+namespace Synuit.Idp.Admin.Controllers
 {
     [Authorize(Policy = AuthorizationConsts.AdministrationPolicy)]
     [TypeFilter(typeof(ControllerExceptionFilterAttribute))]

@@ -1,4 +1,4 @@
-namespace Synuit.STS.Identity.Configuration
+namespace Synuit.Idp.Configuration
 {
     // From where should the login be sourced
     // by default it's sourced from Username

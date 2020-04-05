@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Synuit.Admin.Configuration.Constants;
-using Synuit.Admin.ExceptionHandling;
+using Synuit.Idp.Admin.Configuration.Constants;
+using Synuit.Idp.Admin.ExceptionHandling;
 
-namespace Synuit.Admin.Controllers
+namespace Synuit.Idp.Admin.Controllers
 {
     [Authorize(Policy = AuthorizationConsts.AdministrationPolicy)]
     [TypeFilter(typeof(ControllerExceptionFilterAttribute))]

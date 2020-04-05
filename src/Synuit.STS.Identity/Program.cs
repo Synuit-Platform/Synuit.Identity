@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 
-namespace Synuit.STS.Identity
+namespace Synuit.Idp
 {
     public class Program
     {

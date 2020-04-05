@@ -1,8 +1,8 @@
 using AutoMapper;
-using Synuit.Admin.Api.Dtos.PersistedGrants;
+using Synuit.Idp.Admin.Api.Dtos.PersistedGrants;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Dtos.Grant;
 
-namespace Synuit.Admin.Api.Mappers
+namespace Synuit.Idp.Admin.Api.Mappers
 {
     public class PersistedGrantApiMapperProfile : Profile
     {

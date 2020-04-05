@@ -6,7 +6,7 @@ using Skoruba.AuditLogging.EntityFramework.DbContexts;
 using Skoruba.AuditLogging.EntityFramework.Entities;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Interfaces;
 
-namespace Synuit.Admin.EntityFramework.SqlServer.Extensions
+namespace Synuit.Idp.Admin.EntityFramework.SqlServer.Extensions
 {
     public static class DatabaseExtensions
     {

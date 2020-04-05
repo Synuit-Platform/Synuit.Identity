@@ -1,7 +1,7 @@
-using Synuit.Admin.Configuration.Identity;
+using Synuit.Idp.Admin.Configuration.Identity;
 using System.Collections.Generic;
 
-namespace Synuit.Admin.Configuration
+namespace Synuit.Idp.Admin.Configuration
 {
     public class IdentityDataConfiguration
     {

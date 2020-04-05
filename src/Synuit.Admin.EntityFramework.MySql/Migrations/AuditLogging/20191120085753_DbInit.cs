@@ -2,7 +2,7 @@ using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Synuit.Admin.EntityFramework.MySql.Migrations.AuditLogging
+namespace Synuit.Idp.Admin.EntityFramework.MySql.Migrations.AuditLogging
 {
     public partial class DbInit : Migration
     {

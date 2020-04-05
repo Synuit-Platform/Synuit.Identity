@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace Synuit.STS.Identity.ViewModels.Manage
+namespace Synuit.Idp.ViewModels.Manage
 {
     public class ExternalLoginsViewModel
     {

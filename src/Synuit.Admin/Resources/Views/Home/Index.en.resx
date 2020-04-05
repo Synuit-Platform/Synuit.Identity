@@ -139,6 +139,6 @@
     <value>Users</value>
   </data>
   <data name="PageSubTitle" xml:space="preserve">
-    <value>The administration for the IdentityServer4 and Asp.Net Core Identity</value>
+    <value>Administration Dashboard for Synuit Identity Platform</value>
   </data>
 </root>

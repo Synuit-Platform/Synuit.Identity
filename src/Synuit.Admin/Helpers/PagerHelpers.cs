@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 
-namespace Synuit.Admin.Helpers
+namespace Synuit.Idp.Admin.Helpers
 {
     public static class PagerHelpers
     {

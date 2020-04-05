@@ -1,7 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Synuit.Admin.EntityFramework.SqlServer.Migrations.Identity
+namespace Synuit.Idp.Admin.EntityFramework.SqlServer.Migrations.Identity
 {
     public partial class DbInit : Migration
     {

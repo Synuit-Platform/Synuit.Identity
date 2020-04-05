@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Synuit.Admin.Helpers;
+using Synuit.Idp.Admin.Helpers;
 
-namespace Synuit.Admin.Controllers
+namespace Synuit.Idp.Admin.Controllers
 {
     public class BaseController : Controller
     {

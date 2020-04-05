@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Synuit.Admin.Api.Dtos.Clients
+namespace Synuit.Idp.Admin.Api.Dtos.Clients
 {
     public class ClientApiDto
     {

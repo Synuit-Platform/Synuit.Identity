@@ -1,9 +1,9 @@
 using AutoMapper;
-using Synuit.Admin.Api.Dtos.Roles;
-using Synuit.Admin.Api.Dtos.Users;
+using Synuit.Idp.Admin.Api.Dtos.Roles;
+using Synuit.Idp.Admin.Api.Dtos.Users;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
 
-namespace Synuit.Admin.Api.Mappers
+namespace Synuit.Idp.Admin.Api.Mappers
 {
     public class IdentityMapperProfile<TRoleDto, TRoleDtoKey, TUserRolesDto, TUserDtoKey, TUserClaimsDto, TUserClaimDto, TUserProviderDto, TUserProvidersDto, TUserChangePasswordDto, TRoleClaimDto, TRoleClaimsDto> : Profile
         where TUserClaimsDto : UserClaimsDto<TUserDtoKey>

@@ -1,8 +1,8 @@
 using AutoMapper;
-using Synuit.Admin.Api.Dtos.Clients;
+using Synuit.Idp.Admin.Api.Dtos.Clients;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Dtos.Configuration;
 
-namespace Synuit.Admin.Api.Mappers
+namespace Synuit.Idp.Admin.Api.Mappers
 {
     public class ClientApiMapperProfile : Profile
     {

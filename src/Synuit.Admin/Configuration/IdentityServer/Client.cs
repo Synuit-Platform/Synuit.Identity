@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Synuit.Admin.Configuration.Identity;
+using Synuit.Idp.Admin.Configuration.Identity;
 
-namespace Synuit.Admin.Configuration.IdentityServer
+namespace Synuit.Idp.Admin.Configuration.IdentityServer
 {
     public class Client : global::IdentityServer4.Models.Client
     {

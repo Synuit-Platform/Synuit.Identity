@@ -9,14 +9,14 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Skoruba.AuditLogging.EntityFramework.Entities;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
-using Synuit.Admin.Configuration.Interfaces;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
-using Synuit.Admin.Helpers;
-using Synuit.Admin.Configuration;
-using Synuit.Admin.Configuration.Constants;
+using Synuit.Idp.Admin.Configuration.Interfaces;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Admin.Helpers;
+using Synuit.Idp.Admin.Configuration;
+using Synuit.Idp.Admin.Configuration.Constants;
 
-namespace Synuit.Admin
+namespace Synuit.Idp.Admin
 {
     public class Startup
     {

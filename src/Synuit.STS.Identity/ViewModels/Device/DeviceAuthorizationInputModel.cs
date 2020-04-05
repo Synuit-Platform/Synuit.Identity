@@ -4,9 +4,9 @@
 // Original file: https://github.com/IdentityServer/IdentityServer4.Quickstart.UI
 // Modified by Jan Škoruba
 
-using Synuit.STS.Identity.ViewModels.Consent;
+using Synuit.Idp.ViewModels.Consent;
 
-namespace Synuit.STS.Identity.ViewModels.Device
+namespace Synuit.Idp.ViewModels.Device
 {
     public class DeviceAuthorizationInputModel : ConsentInputModel
     {

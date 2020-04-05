@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Synuit.STS.Identity.ViewModels.Account
+namespace Synuit.Idp.ViewModels.Account
 {
     public class ResetPasswordViewModel
     {

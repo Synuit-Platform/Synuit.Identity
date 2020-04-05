@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.STS.Identity.Helpers;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Helpers;
 
-namespace Synuit.STS.Identity.Configuration.Test
+namespace Synuit.Idp.Configuration.Test
 {
     public class StartupTest : Startup
     {

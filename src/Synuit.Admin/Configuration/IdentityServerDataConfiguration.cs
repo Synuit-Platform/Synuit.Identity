@@ -1,8 +1,8 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
-using Client = Synuit.Admin.Configuration.IdentityServer.Client;
+using Client = Synuit.Idp.Admin.Configuration.IdentityServer.Client;
 
-namespace Synuit.Admin.Configuration
+namespace Synuit.Idp.Admin.Configuration
 {
     public class IdentityServerDataConfiguration
     {

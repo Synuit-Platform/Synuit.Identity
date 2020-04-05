@@ -6,7 +6,7 @@
 
 using IdentityServer4.Models;
 
-namespace Synuit.STS.Identity.ViewModels.Home
+namespace Synuit.Idp.ViewModels.Home
 {
     public class ErrorViewModel
     {

@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-using Synuit.Admin.EntityFramework.Shared.DbContexts;
-using Synuit.Admin.EntityFramework.Shared.Entities.Identity;
-using Synuit.Admin.Helpers;
+using Synuit.Idp.Admin.EntityFramework.Shared.DbContexts;
+using Synuit.Idp.Admin.EntityFramework.Shared.Entities.Identity;
+using Synuit.Idp.Admin.Helpers;
 
-namespace Synuit.Admin
+namespace Synuit.Idp.Admin
 {
     public class Program
     {
@@ -29,8 +29,9 @@ namespace Synuit.Admin
 
                 var host = CreateHostBuilder(args).Build();
 
-                // Uncomment this to seed upon startup, alternatively pass in `dotnet run /seed` to seed using CLI
-                await DbMigrationHelpers.EnsureSeedData<IdentityServerConfigurationDbContext, AdminIdentityDbContext, IdentityServerPersistedGrantDbContext, AdminLogDbContext, AdminAuditLogDbContext, UserIdentity, UserIdentityRole>(host);
+               // Uncomment this to seed upon startup, alternatively pass in `dotnet run /seed` to seed using CLI
+    
+               //await DbMigrationHelpers.EnsureSeedData<IdentityServerConfigurationDbContext, AdminIdentityDbContext, IdentityServerPersistedGrantDbContext, AdminLogDbContext, AdminAuditLogDbContext, UserIdentity, UserIdentityRole>(host);
                 if (seed)
                 {
                     await DbMigrationHelpers

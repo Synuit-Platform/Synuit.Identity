@@ -1,4 +1,4 @@
-namespace Synuit.Admin.Configuration.Interfaces
+namespace Synuit.Idp.Admin.Configuration.Interfaces
 {
     public interface IRootConfiguration
     {

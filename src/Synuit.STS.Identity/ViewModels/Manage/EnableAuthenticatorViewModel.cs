@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace Synuit.STS.Identity.ViewModels.Manage
+namespace Synuit.Idp.ViewModels.Manage
 {
     public class EnableAuthenticatorViewModel
     {

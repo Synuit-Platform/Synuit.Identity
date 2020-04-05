@@ -7,9 +7,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Synuit.STS.Identity.Configuration;
+using Synuit.Idp.Configuration;
 
-namespace Synuit.STS.Identity.ViewModels.Account
+namespace Synuit.Idp.ViewModels.Account
 {
     public class LoginViewModel : LoginInputModel
     {

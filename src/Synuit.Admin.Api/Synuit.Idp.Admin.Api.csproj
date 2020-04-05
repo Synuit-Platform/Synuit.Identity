@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -45,10 +45,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Synuit.Admin.EntityFramework.MySql\Synuit.Admin.EntityFramework.MySql.csproj" />
-        <ProjectReference Include="..\Synuit.Admin.EntityFramework.PostgreSQL\Synuit.Admin.EntityFramework.PostgreSQL.csproj" />
-        <ProjectReference Include="..\Synuit.Admin.EntityFramework.Shared\Synuit.Admin.EntityFramework.Shared.csproj" />
-        <ProjectReference Include="..\Synuit.Admin.EntityFramework.SqlServer\Synuit.Admin.EntityFramework.SqlServer.csproj" />
+        <ProjectReference Include="..\Synuit.Admin.EntityFramework.MySql\Synuit.Idp.Admin.EntityFramework.MySql.csproj" />
+        <ProjectReference Include="..\Synuit.Admin.EntityFramework.PostgreSQL\Synuit.Idp.Admin.EntityFramework.PostgreSQL.csproj" />
+        <ProjectReference Include="..\Synuit.Admin.EntityFramework.Shared\Synuit.Idp.Admin.EntityFramework.Shared.csproj" />
+        <ProjectReference Include="..\Synuit.Admin.EntityFramework.SqlServer\Synuit.Idp.Admin.EntityFramework.SqlServer.csproj" />
     </ItemGroup>
 
     <ItemGroup>

@@ -27,23 +27,23 @@ using Skoruba.AuditLogging.EntityFramework.Services;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Identity.Dtos.Identity;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Services;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Services.Interfaces;
-using Synuit.Admin.ExceptionHandling;
-using Synuit.Admin.Configuration;
-using Synuit.Admin.Configuration.ApplicationParts;
-using Synuit.Admin.Configuration.Constants;
-using Synuit.Admin.Configuration.Interfaces;
+using Synuit.Idp.Admin.ExceptionHandling;
+using Synuit.Idp.Admin.Configuration;
+using Synuit.Idp.Admin.Configuration.ApplicationParts;
+using Synuit.Idp.Admin.Configuration.Constants;
+using Synuit.Idp.Admin.Configuration.Interfaces;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Interfaces;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Repositories;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Repositories.Interfaces;
-using Synuit.Admin.Helpers.Localization;
+using Synuit.Idp.Admin.Helpers.Localization;
 using System.Linq;
-using Synuit.Admin.EntityFramework.MySql.Extensions;
-using Synuit.Admin.EntityFramework.Shared.Configuration;
-using Synuit.Admin.EntityFramework.SqlServer.Extensions;
-using Synuit.Admin.EntityFramework.PostgreSQL.Extensions;
+using Synuit.Idp.Admin.EntityFramework.MySql.Extensions;
+using Synuit.Idp.Admin.EntityFramework.Shared.Configuration;
+using Synuit.Idp.Admin.EntityFramework.SqlServer.Extensions;
+using Synuit.Idp.Admin.EntityFramework.PostgreSQL.Extensions;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Helpers;
 
-namespace Synuit.Admin.Helpers
+namespace Synuit.Idp.Admin.Helpers
 {
     public static class StartupHelpers
     {

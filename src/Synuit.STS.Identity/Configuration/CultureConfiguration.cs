@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Synuit.STS.Identity.Configuration
+namespace Synuit.Idp.Configuration
 {
     public class CultureConfiguration
     {

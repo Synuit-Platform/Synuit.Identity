@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Newtonsoft.Json;
 using Skoruba.IdentityServer4.Admin.BusinessLogic.Shared.ExceptionHandling;
-using Synuit.Admin.Helpers;
+using Synuit.Idp.Admin.Helpers;
 
-namespace Synuit.Admin.ExceptionHandling
+namespace Synuit.Idp.Admin.ExceptionHandling
 {
     public class ControllerExceptionFilterAttribute : ExceptionFilterAttribute
     {

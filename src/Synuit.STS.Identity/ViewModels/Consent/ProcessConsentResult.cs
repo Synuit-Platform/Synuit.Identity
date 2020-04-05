@@ -4,7 +4,7 @@
 // Original file: https://github.com/IdentityServer/IdentityServer4.Quickstart.UI
 // Modified by Jan Škoruba
 
-namespace Synuit.STS.Identity.ViewModels.Consent
+namespace Synuit.Idp.ViewModels.Consent
 {
     public class ProcessConsentResult
     {

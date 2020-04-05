@@ -4,7 +4,7 @@
 // Original file: https://github.com/IdentityServer/IdentityServer4.Quickstart.UI
 // Modified by Jan Škoruba
 
-namespace Synuit.STS.Identity.Configuration
+namespace Synuit.Idp.Configuration
 {
     public class ConsentOptions
     {

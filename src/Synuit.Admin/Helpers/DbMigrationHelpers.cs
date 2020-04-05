@@ -9,11 +9,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Skoruba.AuditLogging.EntityFramework.DbContexts;
 using Skoruba.AuditLogging.EntityFramework.Entities;
-using Synuit.Admin.Configuration;
-using Synuit.Admin.Configuration.Interfaces;
+using Synuit.Idp.Admin.Configuration;
+using Synuit.Idp.Admin.Configuration.Interfaces;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Interfaces;
 
-namespace Synuit.Admin.Helpers
+namespace Synuit.Idp.Admin.Helpers
 {
     public static class DbMigrationHelpers
     {

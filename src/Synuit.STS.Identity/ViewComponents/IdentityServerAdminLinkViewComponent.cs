@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Synuit.STS.Identity.Configuration.Interfaces;
+using Synuit.Idp.Configuration.Interfaces;
 
-namespace Synuit.STS.Identity.ViewComponents
+namespace Synuit.Idp.ViewComponents
 {
     public class IdentityServerAdminLinkViewComponent : ViewComponent
     {

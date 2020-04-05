@@ -14,21 +14,21 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using SendGrid;
-using Synuit.STS.Identity.Configuration;
-using Synuit.STS.Identity.Configuration.ApplicationParts;
-using Synuit.STS.Identity.Configuration.Constants;
-using Synuit.STS.Identity.Configuration.Interfaces;
-using Synuit.STS.Identity.Helpers.Localization;
-using Synuit.STS.Identity.Services;
+using Synuit.Idp.Configuration;
+using Synuit.Idp.Configuration.ApplicationParts;
+using Synuit.Idp.Configuration.Constants;
+using Synuit.Idp.Configuration.Interfaces;
+using Synuit.Idp.Helpers.Localization;
+using Synuit.Idp.Services;
 using System.Linq;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Interfaces;
-using Synuit.Admin.EntityFramework.MySql.Extensions;
-using Synuit.Admin.EntityFramework.PostgreSQL.Extensions;
-using Synuit.Admin.EntityFramework.Shared.Configuration;
-using Synuit.Admin.EntityFramework.SqlServer.Extensions;
+using Synuit.Idp.Admin.EntityFramework.MySql.Extensions;
+using Synuit.Idp.Admin.EntityFramework.PostgreSQL.Extensions;
+using Synuit.Idp.Admin.EntityFramework.Shared.Configuration;
+using Synuit.Idp.Admin.EntityFramework.SqlServer.Extensions;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Helpers;
 
-namespace Synuit.STS.Identity.Helpers
+namespace Synuit.Idp.Helpers
 {
     public static class StartupHelpers
     {

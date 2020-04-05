@@ -4,7 +4,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace Synuit.Admin.Middlewares
+namespace Synuit.Idp.Admin.Middlewares
 {
     public class AuthenticatedTestRequestMiddleware
     {

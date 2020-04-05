@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Synuit.Admin.Api.Dtos.IdentityResources
+namespace Synuit.Idp.Admin.Api.Dtos.IdentityResources
 {
     public class IdentityResourceApiDto
     {

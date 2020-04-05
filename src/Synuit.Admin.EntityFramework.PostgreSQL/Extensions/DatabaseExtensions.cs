@@ -7,7 +7,7 @@ using Skoruba.AuditLogging.EntityFramework.DbContexts;
 using Skoruba.AuditLogging.EntityFramework.Entities;
 using Skoruba.IdentityServer4.Admin.EntityFramework.Interfaces;
 
-namespace Synuit.Admin.EntityFramework.PostgreSQL.Extensions
+namespace Synuit.Idp.Admin.EntityFramework.PostgreSQL.Extensions
 {
     public static class DatabaseExtensions
     {

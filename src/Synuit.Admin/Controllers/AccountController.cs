@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Synuit.Admin.Configuration.Constants;
-using Synuit.Admin.Configuration.Interfaces;
+using Synuit.Idp.Admin.Configuration.Constants;
+using Synuit.Idp.Admin.Configuration.Interfaces;
 
-namespace Synuit.Admin.Controllers
+namespace Synuit.Idp.Admin.Controllers
 {
     [Authorize]
     public class AccountController : BaseController

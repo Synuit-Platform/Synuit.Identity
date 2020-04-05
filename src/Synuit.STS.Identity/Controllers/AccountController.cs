@@ -21,12 +21,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
-using Synuit.STS.Identity.Configuration;
-using Synuit.STS.Identity.Helpers;
-using Synuit.STS.Identity.Helpers.Localization;
-using Synuit.STS.Identity.ViewModels.Account;
+using Synuit.Idp.Configuration;
+using Synuit.Idp.Helpers;
+using Synuit.Idp.Helpers.Localization;
+using Synuit.Idp.ViewModels.Account;
 
-namespace Synuit.STS.Identity.Controllers
+namespace Synuit.Idp.Controllers
 {
     [SecurityHeaders]
     [Authorize]
