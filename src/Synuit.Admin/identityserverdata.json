@@ -75,33 +75,13 @@
             ]
           }
         ]
-      },
-      {
-        "Name": "policy.server",
-        "Scopes": [
-          {
-            "Name": "Synuit.Policy.Server",
-            "DisplayName": "Synuit Policy Server",
-            "Required": true,
-            "UserClaims": [
-              "role",
-              "name"
-            ]
-          }
-        ],
-        "ApiSecrets": [
-          {
-            "Value": "policy.server.secret"
-          }
-        ]
       }
     ],
-      
     "Clients": [
       {
         "ClientId": "syid.admin",
         "ClientName": "Synuit Identity Admin",
-        "ClientUri": "http://localhost:9000",
+        "ClientUri": "https://idp.test.admin.syid.io",
         "AllowedGrantTypes": [
           "hybrid"
         ],
@@ -111,14 +91,14 @@
           }
         ],
         "RedirectUris": [
-          "http://localhost:9000/signin-oidc"
+          "https://idp.test.admin.syid.io/signin-oidc"
         ],
-        "FrontChannelLogoutUri": "http://localhost:9000/signout-oidc",
+        "FrontChannelLogoutUri": "https://idp.test.admin.syid.io/signout-oidc",
         "PostLogoutRedirectUris": [
-          "http://localhost:9000/signout-callback-oidc"
+          "https://idp.test.admin.syid.io/signout-callback-oidc"
         ],
         "AllowedCorsOrigins": [
-          "http://localhost:9000"
+          "https://idp.test.admin.syid.io"
         ],
         "AllowedScopes": [
           "openid",
@@ -134,71 +114,13 @@
           "implicit"
         ],
         "RedirectUris": [
-          "http://localhost:5001/swagger/oauth2-redirect.html"
+          "https://api.test.syid.io/swagger/oauth2-redirect.html"
         ],
         "AllowedScopes": [
           "syid.admin.api"
         ],
         "AllowAccessTokensViaBrowser": true
 
-      },
-      {
-        "ClientId": "hospital.demo",
-        "ClientName": "Synuit. Policy Hospital Demo",
-        "ClientUri": "http://localhost:9000",
-        "AllowedGrantTypes": [
-          "hybrid"
-        ],
-        "ClientSecrets": [
-          {
-            "Value": "hospital.demo.secret"
-          }
-        ],
-        "RedirectUris": [
-          "http://localhost:9000/signin-oidc"
-        ],
-        "FrontChannelLogoutUri": "http://localhost:9000/signout-oidc",
-        "PostLogoutRedirectUris": [
-          "http://localhost:9000/signout-callback-oidc"
-        ],
-        "AllowedCorsOrigins": [
-          "http://localhost:9000"
-        ],
-        "AllowedScopes": [
-          "openid",
-          "email",
-          "profile",
-          "roles"
-        ]
-      },
-      {
-        "ClientId": "policy.client",
-        "ClientName": "Synuit.Policy Client",
-        "ClientUri": "https://localhost:5011",
-        "AllowedGrantTypes": [
-          "hybrid"
-        ],
-        "ClientSecrets": [
-          {
-            "Value": "policy.client.secret.1"
-          }
-        ],
-        "RedirectUris": [
-          "http://localhost:9000/signin-oidc"
-        ],
-        "FrontChannelLogoutUri": "http://localhost:9000/signout-oidc",
-        "PostLogoutRedirectUris": [
-          "http://localhost:9000/signout-callback-oidc"
-        ],
-        "AllowedCorsOrigins": [
-          "http://localhost:5011"
-        ],
-        "AllowedScopes": [
-          "openid",
-          "email",
-          "profile",
-          "roles"
-        ]
       }
     ]
   }

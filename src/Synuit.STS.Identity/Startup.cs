@@ -14,102 +14,96 @@ using Synuit.Idp.Helpers;
 
 namespace Synuit.Idp
 {
-    public class Startup
-    {
-        public IConfiguration Configuration { get; }
-        public IWebHostEnvironment Environment { get; }
+   public class Startup
+   {
+      public IConfiguration Configuration { get; }
+      public IWebHostEnvironment Environment { get; }
 
-        public Startup(IWebHostEnvironment environment, IConfiguration configuration)
-        {
-            Configuration = configuration;
-            Environment = environment;
-        }
+      public Startup(IWebHostEnvironment environment, IConfiguration configuration)
+      {
+         Configuration = configuration;
+         Environment = environment;
+      }
 
-        public void ConfigureServices(IServiceCollection services)
-        {
-            var rootConfiguration = CreateRootConfiguration();
-            services.AddSingleton(rootConfiguration);
+      public void ConfigureServices(IServiceCollection services)
+      {
+         var rootConfiguration = CreateRootConfiguration();
+         services.AddSingleton(rootConfiguration);
 
-            // Register DbContexts for IdentityServer and Identity
-            RegisterDbContexts(services);
+         // Register DbContexts for IdentityServer and Identity
+         RegisterDbContexts(services);
 
-            // Add email senders which is currently setup for SendGrid and SMTP
-            services.AddEmailSenders(Configuration);
+         // Add email senders which is currently setup for SendGrid and SMTP
+         services.AddEmailSenders(Configuration);
 
-            // Add services for authentication, including Identity model and external providers
-            RegisterAuthentication(services);
-            
-            // Add all dependencies for Asp.Net Core Identity in MVC - these dependencies are injected into generic Controllers
-            // Including settings for MVC and Localization
-            // If you want to change primary keys or use another db model for Asp.Net Core Identity:
-            services.AddMvcWithLocalization<UserIdentity, string>(Configuration);
+         // Add services for authentication, including Identity model and external providers
+         RegisterAuthentication(services);
 
-            // Add authorization policies for MVC
-            RegisterAuthorization(services);
+         // Add all dependencies for Asp.Net Core Identity in MVC - these dependencies are injected into generic Controllers
+         // Including settings for MVC and Localization
+         // If you want to change primary keys or use another db model for Asp.Net Core Identity:
+         services.AddMvcWithLocalization<UserIdentity, string>(Configuration);
 
-            services.AddIdSHealthChecks<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminIdentityDbContext>(Configuration);
-        }
+         // Add authorization policies for MVC
+         RegisterAuthorization(services);
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
+         services.AddIdSHealthChecks<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminIdentityDbContext>(Configuration);
+      }
+
+      public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+      {
+         if (env.IsDevelopment())
+         {
+            app.UseDeveloperExceptionPage();
+         }
+
+         // Add custom security headers
+         app.UseSecurityHeaders();
+         app.UseHttpsRedirection();
+         app.UseStaticFiles();
+         UseAuthentication(app);
+         app.UseMvcLocalizationServices();
+
+         app.UseRouting();
+         app.UseAuthorization();
+         app.UseEndpoints(endpoint =>
+         {
+            endpoint.MapDefaultControllerRoute();
+            endpoint.MapHealthChecks("/health", new HealthCheckOptions
             {
-                app.UseDeveloperExceptionPage();
-            }
-
-            // Add custom security headers
-            app.UseSecurityHeaders();
-
-            app.UseStaticFiles();
-            UseAuthentication(app);
-            app.UseMvcLocalizationServices();
-
-            app.UseRouting();
-            app.UseAuthorization();
-            app.UseEndpoints(endpoint => 
-            { 
-                endpoint.MapDefaultControllerRoute();
-                endpoint.MapHealthChecks("/health", new HealthCheckOptions
-                {
-                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-                });
+               ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
             });
-        }
+         });
+      }
 
-        public virtual void RegisterDbContexts(IServiceCollection services)
-        {
-            services.RegisterDbContexts<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext>(Configuration);
-        }
+      public virtual void RegisterDbContexts(IServiceCollection services)
+      {
+         services.RegisterDbContexts<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext>(Configuration);
+      }
 
-        public virtual void RegisterAuthentication(IServiceCollection services)
-        {
-            services.AddAuthenticationServices<AdminIdentityDbContext, UserIdentity, UserIdentityRole>(Configuration);
-            services.AddIdentityServer<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, UserIdentity>(Configuration);
-        }
+      public virtual void RegisterAuthentication(IServiceCollection services)
+      {
+         services.AddAuthenticationServices<AdminIdentityDbContext, UserIdentity, UserIdentityRole>(Configuration);
+         services.AddIdentityServer<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, UserIdentity>(Configuration);
+      }
 
-        public virtual void RegisterAuthorization(IServiceCollection services)
-        {
-            var rootConfiguration = CreateRootConfiguration();
-            services.AddAuthorizationPolicies(rootConfiguration);
-        }
+      public virtual void RegisterAuthorization(IServiceCollection services)
+      {
+         var rootConfiguration = CreateRootConfiguration();
+         services.AddAuthorizationPolicies(rootConfiguration);
+      }
 
-        public virtual void UseAuthentication(IApplicationBuilder app)
-        {
-            app.UseIdentityServer();
-        }
+      public virtual void UseAuthentication(IApplicationBuilder app)
+      {
+         app.UseIdentityServer();
+      }
 
-        protected IRootConfiguration CreateRootConfiguration()
-        {
-            var rootConfiguration = new RootConfiguration();
-            Configuration.GetSection(ConfigurationConsts.AdminConfigurationKey).Bind(rootConfiguration.AdminConfiguration);
-            Configuration.GetSection(ConfigurationConsts.RegisterConfigurationKey).Bind(rootConfiguration.RegisterConfiguration);
-            return rootConfiguration;
-        }
-    }
+      protected IRootConfiguration CreateRootConfiguration()
+      {
+         var rootConfiguration = new RootConfiguration();
+         Configuration.GetSection(ConfigurationConsts.AdminConfigurationKey).Bind(rootConfiguration.AdminConfiguration);
+         Configuration.GetSection(ConfigurationConsts.RegisterConfigurationKey).Bind(rootConfiguration.RegisterConfiguration);
+         return rootConfiguration;
+      }
+   }
 }
-
-
-
-
-
-

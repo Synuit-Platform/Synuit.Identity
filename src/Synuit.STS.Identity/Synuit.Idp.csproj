@@ -53,6 +53,12 @@
       <Folder Include="logs\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="files\Synuit-2020-04-04-123008.p12">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
 
 
