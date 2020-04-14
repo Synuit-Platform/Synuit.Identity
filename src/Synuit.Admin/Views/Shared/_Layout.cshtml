@@ -1,4 +1,4 @@
-@using IdentityServer4.Extensions
+﻿@using IdentityServer4.Extensions
 @using Microsoft.AspNetCore.Mvc.Localization
 @using Synuit.Idp.Admin.Configuration.Interfaces
 @inject IViewLocalizer Localizer
@@ -88,7 +88,7 @@
             <div class="row">
                 <div class="col-6 col-md">
                     @RootConfiguration.AdminConfiguration.PageTitle
-                    <small class="d-block mb-3 text-muted">@Localizer["FooterCopyright"] @DateTime.Now.Year</small>
+                    <small class="d-block mb-3 text-muted">Copyright @Localizer["FooterCopyright"] 2018-@DateTime.Now.Year Synuit LLC.</small>
                 </div>
                 <div class="col-md-6 text-right">
                     @await Html.PartialAsync("Common/SelectLanguage")
